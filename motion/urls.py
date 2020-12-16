@@ -5,5 +5,7 @@ urlpatterns=[
     path('mysecondpage',views.mysecondpage,name='mysecondpage'),
     path('mythirdpage',views.mythirdpage,name='mythirdpage'),
     path('myimagepage',views.myimagepage,name='myimgaepage'),
-    path('myimagepage2',views.myimagepage2,name='myimagepage2')
+    path('myimagepage2',views.myimagepage2,name='myimagepage2'),
+    path('myform',views.myform,name='myform'),
+    path('submitmyform',views.submitmyform,name='submitmyform')
 ]

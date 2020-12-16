@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 
 # Create your views here.
 def index(request):
@@ -31,4 +31,17 @@ def myimagepage(request):
 
 def myimagepage2(request):
     return render(request,'imagepage2.html')
+
+def myform(request):
+    return render(request,'myform.html')
+
+def submitmyform(request):
+    mydictionary={
+        #var1:
+        #var2:
+        "method": request.method
+
+        
+    }
+    return JsonResponse(mydictionary)
 
