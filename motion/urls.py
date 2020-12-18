@@ -7,5 +7,6 @@ urlpatterns=[
     path('myimagepage',views.myimagepage,name='myimgaepage'),
     path('myimagepage2',views.myimagepage2,name='myimagepage2'),
     path('myform',views.myform,name='myform'),
-    path('submitmyform',views.submitmyform,name='submitmyform')
+    path('submitmyform',views.submitmyform,name='submitmyform'),
+    path('myform2',views.myform2,name='myform2')
 ]

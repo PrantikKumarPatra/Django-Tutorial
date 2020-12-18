@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
+from .forms import *
 
 # Create your views here.
 def index(request):
@@ -44,4 +45,15 @@ def submitmyform(request):
         
     }
     return JsonResponse(mydictionary)
+
+def myform2(request):
+    if request.method=="POST":
+        pass
+    elif request.method=="GET":
+        form=FeedbackForm()  #FeedbackForm(none)
+        mydictionary={
+            "form" : form
+            }
+        return render(request,'myform2.html',context=mydictionary)
+        
 
