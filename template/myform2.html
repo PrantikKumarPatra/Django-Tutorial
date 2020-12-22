@@ -1,7 +1,12 @@
 {% extends 'index.html' %}
 {% block title %}My Form2{% endblock %}
 {% block content %}
-<form>
-    {{form.as_p}}
+<div class="col-md-6" style="margin: 0 auto;">
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_ul}}
+    </br>
+    <button type="submit" class="btn btn-primary" style="margin: 0 auto;display: block;" >Submit</button>
 </form>
+</div>
 {% endblock%}
